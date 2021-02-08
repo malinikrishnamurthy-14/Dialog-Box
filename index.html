@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dialog Box</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <button onClick="loadDialogBox()">About</button>
+    <div id="about-dialog" class="modal-container">
+      <div class="model-content">
+        <div class="heading-container">
+          <div class="close" id="close-button" onClick="closeMD()">&times;</div>
+          <h1 class="heading">About...</h1>
+        
+        </div>
+        <div>
+          <p class="para">
+            The Bellman–Ford algorithm is an algorithm that computes shortest
+            paths from a single source vertex to all of the other vertices in a
+            weighted digraph.[1] It is slower than Dijkstra's algorithm for the
+            same problem, but more versatile, as it is capable of handling
+            graphs in which some of the edge weights are negative numbers. The
+            algorithm was first proposed by Alfonso Shimbel (1955), but is
+            instead named after Richard Bellman and Lester Ford Jr., who
+            published it in 1958 and 1956, respectively.[2] Edward F. Moore also
+            published a variation of the algorithm in 1959, and for this reason
+            it is also sometimes called the Bellman–Ford–Moore algorithm.[1]
+            Negative edge weights are found in various applications of graphs,
+            hence the usefulness of this algorithm.[3] If a graph contains a
+            "negative cycle" (i.e. a cycle whose edges sum to a negative value)
+            that is reachable from the source, then there is no cheapest path:
+            any path that has a point on the negative cycle can be made cheaper
+            by one more walk around the negative cycle. In such a case, the
+            Bellman–Ford algorithm can detect and report the negative
+            cycle.[1][4]
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
